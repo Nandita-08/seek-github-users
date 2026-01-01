@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+     --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --muted: #8b949e;
+    --blue: rgb(88, 166, 255);
+}
+body {
+    font-family: 'Inconsolata', monospace;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px;
+}
+.logo{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    width:500px;
+    margin-top:30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-family: Audiowide, cursive;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--blue);
+}
+button {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: #000000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a1919;
+}
+.error {
+    text-align: center;
+    color: #cf222e;
+    margin-bottom: 20px;
+}
+.profile-card {
+    display: flex;
+    gap: 20px;
+    background: var(--card);
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 32px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 14px;
+}
+.badges {
+    margin-top: 10px;
+}
+
+.badges span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: var(--text);
+}
+.profile-card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.profile-card a:hover {
+    text-decoration: underline;
+}
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+.repo-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.repo-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.repo-card h3 a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.repo-card h3 a:hover {
+    text-decoration: underline;
+}
+a{
+    color:var(--blue);
+    text-decoration:underline;
+}
+.repo-card p {
+    font-size: 15px;
+    color: var(--muted);
+}
+.repo-stats {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--muted);
+    display: flex;
+    gap: 16px;
+}
+footer{
+    text-align:center;
+    margin-top:40px;
+    padding: 20px;
+    color:var(--muted);
+
+
+}
