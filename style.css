@@ -162,5 +162,9 @@ footer{
     padding: 20px;
     color:var(--muted);
 
-
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
